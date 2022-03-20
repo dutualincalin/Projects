@@ -1,0 +1,54 @@
+Dutu Alin Calin
+336CC
+
+		Tema 3 APD
+
+Tema contine:
+- tema3.cpp
+- utils.h
+- Makefile
+- README
+
+Explicatii:
+1) utils.h
+	In utils.h am implementat functiile ajutatoare pentru afisarea unui mesaj trimis, 
+pentru afisarea topologiei, implementari proprii de Scatter si Gather si pentru afisarea
+vectorului procesat.
+
+2) tema3.cpp
+
+	Programul a fost implementat in C++ si contine implementarea programului MPI.
+In cadrul executiei programului pentru cazul in care exista legatura intre 0 si 1 am
+realizat transmiterea de mesaje pentru cunoasterea topologiei ca si cand as aplica
+doua iteratii ale algoritmului inel doar ca una va fi de sens opus celeilalte.
+	  
+	Practic am trimis mesajele de la un coordonator la un coordonator vecin intr-un
+anumit sens. (ex: 0->1, 1->2, 2->0) urmat de un acelasi mod de trimitere a mesajelor doar				0 - 2
+ca sensul va fi opus (ex: 0->2, 2->1, 1->0). Astfel daca am lua spre exemplu coodonatorul 0,		 	 \ /
+In prima iteratie 0 va primi de la 2 topologia sa, apoi in a doua iteratie, 0 va primi topologia		  	  1
+lui 1. 0 isi cunoaste topologia, deci topologia din cadrul coordonatorului 0 este completa.
+
+	Daca nu exista legatura intre 0 si 1, atunci ne vom folosi de coordonatorul 2 ca nod
+de legatura intre 0 si 1. Astfel, voi trimite in acelasi timp topologia lui 0 si a lui 1 la 2.			0 <-> 2 <-> 1
+Coordonatorul 2 va avea intreaga topologie si va trimite celorlaltor coordonatori topologiile
+lipsa.
+
+	Partea de distributie a topologiei intre coordonatori si workeri e asemanatoare cu
+Broadcast. In schimb la partea de realizare a calculelor se folosesc 2 functii ajutoatoare
+asemanatoare cu un scatter si cu un gather care distribuie in mod egal vectorul si il
+reintregesc in cadrul coordonatorului dupa procesare.
+
+	In cadrul transmiei intre coordonatori la partea de realizare a calculelor si cu conexiune
+intre 0 si 1, lucrurile sunt foarte simple. Dupa formarea vectorului si calcularea proportiilor
+pentru fiecare cluster, coordonatorul 0 isi preia propria bucata, dupa care trimite coordonatorilor
+1 si 2 bucatile care le apartin. Dupa ce sunt procesate, toate bucatile ajung la coordonatori apoi
+1 si 2 vor trimite direct la 0 pentru formarea vectorului final.
+
+	In cazul in care conexiunea 0-1 este intrerupta se va proceda astfel: Se formeaza vectorul,
+coordonatorul 0 isi preia bucata lui si trimite restul vectorului mai departe la 2, coordonatorul 2
+isi va lua si el bucata lui si restul va trimite la 1, dupa procesari 1 isiva trimite bucata la 2
+si cele doua bucati procesate se vor uni. 2 va trimite vectorul nou format la 0 unde se va forma
+in final tot vectorul.
+
+	Toate aceste lucruri se pot observa si in cadrul comentariilor din cod care sunt, dupa parerea
+mea, suficiente cat sa se inteleaga ce se intampla acolo :).
