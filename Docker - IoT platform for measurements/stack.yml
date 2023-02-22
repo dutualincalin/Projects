@@ -1,0 +1,57 @@
+version: '3.3'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    volumes:
+      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    ports:
+      - "1883:1883"
+    networks:
+      mqtt-protocol:
+        aliases:
+          - mosquitto
+
+  mqtt-adapter:
+    env_file: ./mqtt-adapter/adapter.env
+    build: ./mqtt-adapter
+    image: mqtt-adapter
+    depends_on:
+      - mosquitto
+      - influxdb
+    networks:
+      mqtt-protocol:
+      db-network:
+
+  influxdb:
+    image: influxdb:1.8-alpine
+    env_file: ./influxdb/influxdb.env
+    volumes:
+      - ${SPRC_DVP}/influxdb:/var/lib/influxdb
+    ports:
+      - "8086"
+    networks:
+      db-network:
+        aliases:
+          - influxdb
+      gui-network:
+        aliases:
+          - influxdb
+
+  grafana:
+    image: grafana/grafana:latest
+    env_file: ./grafana/grafana.env
+    depends_on:
+      - influxdb
+    ports:
+      - "80:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ${SPRC_DVP}/grafana:/var/lib/grafana
+    networks:
+      gui-network:
+
+networks:
+  db-network:
+  mqtt-protocol:
+  gui-network:
