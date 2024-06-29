@@ -7,4 +7,3 @@
 ![](./Documentation/Images/Message%20Distribution%20Server%20-%207.jpg)
 ![](./Documentation/Images/Message%20Distribution%20Server%20-%208.jpg)
 ![](./Documentation/Images/Message%20Distribution%20Server%20-%209.jpg)
-![](./Documentation/Images/Message%20Distribution%20Server%20-%2010.jpg)
