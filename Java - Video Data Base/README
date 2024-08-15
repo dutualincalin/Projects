@@ -1,29 +1,12 @@
-Nume: Dutu Alin Calin
-Grupa: 323 CD
-
-    Acest proiect reprezinta rezolvarea temei 1 la materia Programare Orientata pe Obiecte in anul
-universitar 2020 - 2021.
-
-    Proiectul contine:
-1) Folderul .git
-2) Folderul src cu toate clasele necesare pentru rularea temei
-3) Fisierul README
-
-    Pentru versionarea .git s-au efectuat 8 commit-uri cu precizarea ca commit-ul initial a fost facut cu
-scopul de a salva scheletul temei in github.
-
-    Pentru rularea temei s-a adaugat in functia main un centru de comanda care copiaza datele din clasele
-de input in clasele nou create. Pentru retinere s-au folosit clasele: ActorList, UserList, MovieList si
-ShowList. Urmeaza iterarea actiunilor si executarea lor folosind clasa Action. In functie de tipul actiunii
-se vor folosi functiile din clasele Command, Query si Recommendation.
-    Pentru Command inafara de clasele de prelucrare ale bazelor de date( User, Actor, Movie, Show) nu se
-folosesc alte clase.
-    Pentru Query se folosesc pe langa clasele pentru bazele de date si clasa Comparators care se foloseste
-pentru sortare si clasele ActorActionList si VideoActionList cu care am creat liste destinate sortarii
-elementelor. De asemenea tot aici se folosesc si enum-ul ActorAwards pentru anumite query-uri.
-    Pentru Recommendation se folosesc clasele pentru bazele de date, clasa comparators care este folosita
-tot pentru sortari si enum-ul Genre pentru verificarea genului la o recomandare.
-    Toate aceste functii vor folosi clasa Result care va retine rezultatul pana la finalul fiecarei actiuni
-si cu ajutorul careia se preia rezultatul final al functiilor apelate sub forma de id actiune + mesaj si va
-intoarce aceste elemente pana in main urmand sa populeze vectorul de output de tip JSON cu output-ul
-functiilor.
+![](./Documentation/Images/Video%20Database%20Project%20-%201.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%202.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%203.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%204.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%205.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%206.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%207.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%208.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%209.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%2010.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%2011.jpg)
+![](./Documentation/Images/Video%20Database%20Project%20-%2012.jpg)
