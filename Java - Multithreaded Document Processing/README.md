@@ -4,5 +4,3 @@
 ![](./Documentation/Images/Multithreaded%20Document%20Processing%20-%204.jpg)
 ![](./Documentation/Images/Multithreaded%20Document%20Processing%20-%205.jpg)
 ![](./Documentation/Images/Multithreaded%20Document%20Processing%20-%206.jpg)
-![](./Documentation/Images/Multithreaded%20Document%20Processing%20-%207.jpg)
-![](./Documentation/Images/Multithreaded%20Document%20Processing%20-%208.jpg)

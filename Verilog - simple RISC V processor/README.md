@@ -13,4 +13,3 @@
 ![](./Documentation/Images/RISC%20V%20Processor%20-%2013.jpg)
 ![](./Documentation/Images/RISC%20V%20Processor%20-%2014.jpg)
 ![](./Documentation/Images/RISC%20V%20Processor%20-%2015.jpg)
-![](./Documentation/Images/RISC%20V%20Processor%20-%2016.jpg)

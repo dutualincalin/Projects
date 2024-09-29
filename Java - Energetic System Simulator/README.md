@@ -14,4 +14,3 @@
 ![](./Documentation/Images/Energetic%20System%20Simulator%20-%2014.jpg)
 ![](./Documentation/Images/Energetic%20System%20Simulator%20-%2015.jpg)
 ![](./Documentation/Images/Energetic%20System%20Simulator%20-%2016.jpg)
-![](./Documentation/Images/Energetic%20System%20Simulator%20-%2017.jpg)

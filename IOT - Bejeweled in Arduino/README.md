@@ -10,5 +10,3 @@
 ![](Documentation/Images/Bejeweled%20in%20Arduino%20-%2010.jpg)
 ![](Documentation/Images/Bejeweled%20in%20Arduino%20-%2011.jpg)
 ![](Documentation/Images/Bejeweled%20in%20Arduino%20-%2012.jpg)
-![](Documentation/Images/Bejeweled%20in%20Arduino%20-%2013.jpg)
-![](Documentation/Images/Bejeweled%20in%20Arduino%20-%2014.jpg)

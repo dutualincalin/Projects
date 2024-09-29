@@ -14,5 +14,3 @@
 ![](./Documentation/Images/MSAMA%20-%2014.jpg)
 ![](./Documentation/Images/MSAMA%20-%2015.jpg)
 ![](./Documentation/Images/MSAMA%20-%2016.jpg)
-![](./Documentation/Images/MSAMA%20-%2017.jpg)
-![](./Documentation/Images/MSAMA%20-%2018.jpg)

@@ -9,4 +9,3 @@
 ![](./Documentation/Images/Video%20Database%20Project%20-%209.jpg)
 ![](./Documentation/Images/Video%20Database%20Project%20-%2010.jpg)
 ![](./Documentation/Images/Video%20Database%20Project%20-%2011.jpg)
-![](./Documentation/Images/Video%20Database%20Project%20-%2012.jpg)

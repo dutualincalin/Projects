@@ -6,4 +6,3 @@
 ![](./Documentation/Images/Collaborative%20Calculations%20-%206.jpg)
 ![](./Documentation/Images/Collaborative%20Calculations%20-%207.jpg)
 ![](./Documentation/Images/Collaborative%20Calculations%20-%208.jpg)
-![](./Documentation/Images/Collaborative%20Calculations%20-%209.jpg)

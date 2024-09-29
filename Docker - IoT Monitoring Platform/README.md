@@ -6,5 +6,3 @@
 ![](./Documentation/Images/Iot%20Monitoring%20Platform%20-%206.jpg)
 ![](./Documentation/Images/Iot%20Monitoring%20Platform%20-%207.jpg)
 ![](./Documentation/Images/Iot%20Monitoring%20Platform%20-%208.jpg)
-![](./Documentation/Images/Iot%20Monitoring%20Platform%20-%209.jpg)
-![](./Documentation/Images/Iot%20Monitoring%20Platform%20-%2010.jpg)

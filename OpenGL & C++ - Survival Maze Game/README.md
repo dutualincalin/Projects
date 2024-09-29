@@ -9,4 +9,3 @@
 ![](./Documentation/Images/Survival%20Maze%20Game%20-%209.jpg)
 ![](./Documentation/Images/Survival%20Maze%20Game%20-%2010.jpg)
 ![](./Documentation/Images/Survival%20Maze%20Game%20-%2011.jpg)
-![](./Documentation/Images/Survival%20Maze%20Game%20-%2012.jpg)
